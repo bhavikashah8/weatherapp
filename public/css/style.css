@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Piazzolla", serif;
+}
+:root{
+    --main-bg : #1e272e;
+    --main-color: #0c585e;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+    overflow: hidden;
+    width: 100%;
+}
+
+html{
+    height: 100%;
+    
+}
+
+.row{
+    margin: 0rem;
+}
+/* NavbarStyle */
+
+.main-menu{
+    background-color: var(--main-bg);
+}
+
+.navbar{
+    color: rgb(146, 140, 140);
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+.navbar a{
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 20px;
+}
+.navbar a:hover{
+    background-color: var(--main-color);
+}
+.navbar li {
+    margin-left: 2rem;
+}
+.navbar-toggler{
+    background-color: var(--main-bg);
+}
+.fa-snowflake{
+    transition: all linear;
+    color: #fff;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* mainheader */
+.main_header_left{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 2rem 0;
+    text-transform: capitalize;
+}
+.main_header_left button{
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding: 0.8rem 1.8rem ;
+    text-transform: capitalize;
+    box-shadow: 0 8px 6px -6px blue;    
+}
+.txt_clr{
+    color: blueviolet;
+}
+main_header_left button:hover {
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.main_header_right{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.main_header_right figure img{
+    /* box-shadow: 0px 10px var(--main-bg); */
+    filter: drop-shadow(0.9rem 0.3rem);
+}
+.home_header_right{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.home_header_right p{
+    font-size: 2rem;
+}
+.home_header_right h1{
+    font-size: 4rem;
+    margin: 1rem 0 2rem 0;
+    text-transform: capitalize;
+}
+.home_header_right button{
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding: 0.8rem 1.8rem ;
+    text-transform: capitalize;
+    box-shadow: 0 8px 6px -6px blue;    
+}
+.main_header_left .errimg img {
+    width: 50rem;
+    height: 20rem;
+  }
+
+/* FOOTER */
+footer{
+    background-color: var(--main-bg);
+    
+    margin-top: auto;
+}
+footer p{
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+}
+.temp_form{
+    width: 40%;
+    margin: 5rem auto;
+    position: relative;
+    
+}
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    outline:none;
+    font-size: 1.5rem;    
+    border-radius: 30px;
+    background-color: var(--main-bg);
+    color: #fff;
+}
+::placeholder {
+    color: #bfc1c8;
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+.temp_form input[type="submit"]:hover{
+    color: aqua;
+    background-color: blue;
+}
+.temperature_info{
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+.top_layer {
+  width: 100%;
+  height: 20%;
+  background-color: #2d303d;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem 10rem;
+}
+.top_layer p{
+    font-size: 1rem;
+    margin: 0;
+    color: #fff;
+}
+.main_layer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_layer #city_name{
+    font-size: 2rem;
+    color: cornflowerblue;
+    padding: 2rem 0;    
+}
+.main_layer .middle_layer {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+  }
+  
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  
+.fa {
+    color: #009ad8;
+  }
+  
+sup {
+    font-size: 6rem;
+    margin-top: -2rem;
+  }
+
+
+
+
+  
+
+  
+  /* responsive code  */
